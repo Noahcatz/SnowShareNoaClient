@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading..</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/VideoDisplay.css">
+</head>
+<body>
+    <div class="NavBar">
+        <img id="Logo" src="../Media/Icon.png">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Upload">Upload</a></li>
+            <li><a href="/Edit-Channel">Edit Channel</a></li>
+        </ul>
+        <input id="Search" type="search" placeholder="Search">
+        <button style="visibility: hidden;" id="SignIn" type="button"></button>
+    </div>
+    <div class="ActiveVideo">
+        <video autoplay onerror="LoadError('Failed to fetch')" controlslist="nodownload" controls></video>
+        <h1 style="visibility: visible;">Title
+             <a href="https://www.google.com"><span>by User</span></a>
+             <span>
+                <img draggable="false" src="Media/Likes.svg" id="LikesIcon">
+                <span>Likes</span>
+                <img draggable="false" src="Media/Views.svg" id="ViewsIcon">
+                <h3>Views</h3>
+                </span>
+        </h1>
+    </div>
+    <div style="margin-left: 1000px;" class="VideoListContainer">
+
+    </div>
+
+    <script src="../Scripts/AccountManagement.js"></script>
+    <script src="../Scripts/VideoWatcher.js"></script>
+    <script src="../Scripts/VideoThumbnails.js"></script>
+</body>
+</html>

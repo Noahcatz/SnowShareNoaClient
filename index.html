@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowShare NOA client</title>
+    <link rel="stylesheet" href="CSS/Style.css">\
+    <link rel="stylesheet" href="CSS/VideoDisplay.css">
+</head>
+<body>
+    <div class="NavBar">
+        <img id="Logo" src="Media/Icon.png">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Upload">Upload</a></li>
+            <li><a href="/Edit-Channel">Edit Channel</a></li>
+        </ul>
+        <input id="Search" type="search" placeholder="Search">
+        <button style="visibility: hidden;" id="SignIn" type="button"></button>
+    </div>
+    <div class="VideoListContainer">
+        <a href="https://www.google.com" class="VideoCard" style="display: none;">
+                <video src=""></video>
+                <h1>Title
+                    <span>by User</span>
+                    <span>
+                    <img src="Media/Likes.svg" id="LikesIcon">
+                    <h3>Likes</h3>
+                    <img src="Media/Views.svg" id="ViewsIcon">
+                    <h3>Views</h3>
+                    </span>
+                </h1>
+        </a>
+    </div>
+
+<script src="Scripts/AccountManagement.js"></script>
+<script src="Scripts/VideoThumbnails.js"></script>
+</body>
+</html>

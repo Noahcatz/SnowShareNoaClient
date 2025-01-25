@@ -1,0 +1,84 @@
+
+.VideoListContainer{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.VideoCard video, .VideoCard img{
+    width: 384px;
+    height: 216px;
+    border-radius: 1vmax;
+}
+
+.VideoCard{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.VideoCard h1{
+    margin: 0px;
+    color: black;
+
+    display: block;
+    max-width: 384px;
+}
+
+.VideoCard h1 span img{
+    vertical-align: middle
+}
+
+.VideoCard h1 span, .ActiveVideo h1 span{
+    font-size: small;
+    color: red;
+    margin-left: 2px;
+
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.VideoCard h1 span h3, .ActiveVideo h1 span h3, .ActiveVideo h1 span span{
+    display: inline-block;
+    margin: 0;
+    color: blue;
+    vertical-align: middle;
+
+}
+
+.VideoCard #LikesIcon, .VideoCard #ViewsIcon, .ActiveVideo #LikesIcon, .ActiveVideo #ViewsIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.VideoCard #ViewsIcon, .ActiveVideo #ViewsIcon{
+    margin-left: 10px;
+}
+
+/*ActiveVideoDisplay*/
+
+.ActiveVideo{
+    float: left;
+}
+
+.ActiveVideo video{
+    width: 640px;
+    height: 360px;
+}
+
+.ActiveVideo h1{
+    margin-top: 0px;
+}
+
+.ActiveVideo h1 span{
+    font-size: 20px;
+}
+
+.ActiveVideo h1 span:hover{
+    filter: brightness(90%);
+}
+
+.ActiveVideo h1 span{
+    align-items: center;
+    display: inline-flex;
+}
